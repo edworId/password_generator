@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Password Generator, gerador de senhas">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="part1">
+            <div class="title">
+                <h1>⛓️ PASSWORD GENERATOR ⛓️</h1>
+            </div>
+        </div>
+        <div class="part2">
+            <div class="left">
+                <img src="animate.svg" class="left-image" alt="key_animation">
+            </div>
+            <div class="right">
+                <div class="card">
+                    <div class="top">
+                        <span class="size">Set the size: <span id="valor"></span> characters</span>
+                        <input id="slider" class="slider" type="range" min="8" max="25" value="15"/>
+                        <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
+                    </div>
+                    <div id="container-password" onclick= "copyPassword()" class="bottom hide">
+                        <span class="title_card">YOUR PASSWORD IS:</span>
+                        <span id="password"  class="password"></span>
+                        <span class="tooltip">Click to copy! 👆</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part3">
+            <div class="link">
+                <p>Be linked to github <a href="https://github.com/edworId/password_generator"> project.</a></p>
+            </div>
+            <div class="author">
+                <h5><a href="https://github.com/edworId/"> By EdworId.</a></h5>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

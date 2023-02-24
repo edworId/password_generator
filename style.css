@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+body {
+    margin:0;
+    font-family: 'Crimson Text', serif;
+    background: #000000; 
+    /* #b18181 */
+}
+
+body * {
+    box-sizing: border-box;
+    /* background: #884b4b; */
+}
+
+.content{
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+/* PART 1 */
+
+.part1{
+    margin: 2rem 3rem;
+    color: rgb(11, 153, 11);
+}
+
+/* PART 2 e components */
+
+.part2{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    width: 90vw;
+    height: 80vh;
+    
+}
+
+.left-image{
+    width: 50vw;
+}
+
+.right{
+    display: flex;
+    width: 60vw;
+    height: 50vh;
+    align-items: center;
+    color: rgb(11, 153, 11);
+    font-size: 30pt;
+}
+
+/* .card{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    padding: 30px 35px;
+    background: #5c367275; 
+    border-radius: 40px;
+    box-shadow: -1px -1px 23px 25px rgb(138 107 167 / 39%); 
+} */
+
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 8px;
+    background: #dfdfdf;
+    height: 18px;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.button-cta{
+    width: 55%;
+    padding: 15px 0px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: rgb(255 255 255);
+    background: #0c7a08;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #222121;
+    margin: 10px;
+} 
+
+.password{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    font-size: 20pt;
+    background-color: rgba(255, 255, 255, 0.89);
+    border-radius: 30px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.password:hover{
+    transform: scale(1.10);
+}
+
+.tooltip{
+    position: relative;
+    top: 20px;
+    visibility: hidden;
+    transition-delay: 0.3s;
+}
+
+.bottom:hover .tooltip{
+    visibility: visible;
+}
+
+.hide{
+    visibility: hidden;
+    /* display: none; */
+}
+
+/* PART 3 e components */
+
+.part3{
+    width: 95vw; 
+    display: flex;
+    flex-direction: row;   
+}
+
+p {
+    width: 90vw;
+    color: green;
+}
+
+a {
+    text-align: justify;
+    color: green;
+}
+
