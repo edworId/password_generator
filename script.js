@@ -30,10 +30,13 @@ function generatePassword(){
     containerpassword.classList.remove("hide");
     password.innerHTML = pass;
     novaSenha = pass;
-    // alert(novaSenha)
 }
 
 function copyPassword(){
-    navigator.clipboard.writeText(novaSenha);
-    alert("Senha copiada com sucesso!")
+    
+    navigator.clipboard.writeText(novaSenha).then(function() {
+        alert("Copied to clipboard successfully!");
+      }, function(error) {
+        alert("ERROR:\n"+error);
+      });;
 }
